@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="Keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="Description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="styleOP.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="#E8EBEE" leftmargin="0" topmargin="0">
+<{$xoops_module_header}> 
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<a name="top" id="top"></a>
+<table width="777" height="100%" border="0" cellpadding="0" cellspacing="0" class="btableouter">
+<tr> 
+<td width="766" valign="top"><table width="766" border="0" cellpadding="0" cellspacing="0" bgcolor="#666666" class="btable">
+<tr> 
+<td width="203" height="63"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo.jpg" alt="" /></a></td>
+<td width="560" background="<{$xoops_imageurl}>hdback.jpg"><img src="<{$xoops_imageurl}>top.jpg" width="560" height="63" /></td>
+</tr>
+<tr> 
+<td rowspan="2" valign="top" background="<{$xoops_imageurl}>sb.jpg" class="sidetd"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td class="sidepanel"><img src="<{$xoops_imageurl}>side.jpg" /></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td valign="top"> <{foreach item=block from=$xoops_lblocks}> <{include 
+file="sev_ventti/theme_blockleft.html"}> <{/foreach}> </td>
+</tr>
+<tr> 
+<td valign="top"> <{foreach item=block from=$xoops_rblocks}> <{include 
+file="sev_ventti/theme_blockright.html"}> <{/foreach}> </td>
+</tr>
+</table></td>
+<td class="mainbody" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td align="right" valign="middle"><form style="margin-bottom: 0px; margin-top: 0px;" action="<{$xoops_url}>/search.php" method="post">
+<input class="srchinput" name="query" type="text" size="15" />
+<input type="hidden" name="action" value="results" />
+<input name="Submit" type="image" value="Search" src="<{$xoops_imageurl}>srchbut.gif" align="middle" width="44" height="22" />
+</form></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td align="center"><{$xoops_banner}></td>
+</tr>
+</table>
+<br /> <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<tr> 
+<td colspan="3"> <{if $xoops_showcblock == 1}> <{foreach item=block 
+from=$xoops_ccblocks}> <table cellspacing="0" class="newstable">
+<tbody>
+<tr> 
+<td class="newstop"><{$block.title}></td>
+</tr>
+<tr> 
+<td class="newsmid"> <{$block.content}> </td>
+</tr>
+<tr> </tr>
+</tbody>
+</table>
+<br /> <{/foreach}> </td>
+</tr>
+<tr> 
+<td width="49%" valign="top" class="newstd" > <{foreach item=block 
+from=$xoops_clblocks}> <table cellspacing="0" class="newstable">
+<tbody>
+<tr> 
+<td class="newstop"><{$block.title}></td>
+</tr>
+<tr> 
+<td class="newsmid"><{$block.content}> </td>
+</tr>
+<tr> 
+<td class="newsbot"></td>
+</tr>
+</tbody>
+</table>
+<br /> <{/foreach}> <br /> </td>
+<td width="2%" valign="top" >&nbsp;</td>
+<td width="49%" valign="top" class="newstd"><{foreach item=block 
+from=$xoops_crblocks}> <table cellspacing="0" class="newstable">
+<tbody>
+<tr> 
+<td class="newstop"><{$block.title}></td>
+</tr>
+<tr> 
+<td class="newsmid"> <{$block.content}> </td>
+</tr>
+<tr> 
+<td class="newsbot"></td>
+</tr>
+</tbody>
+</table>
+<br /> <{/foreach}> <br /> </td>
+</tr>
+</table>
+<br /> <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr> 
+<td height="100%" valign="top"><{/if}><br /> <{$xoops_contents}></td>
+</tr>
+</table>
+<br /> </td>
+</tr>
+<tr>
+<td align="center" valign="bottom" bgcolor="#FFFFFF" class="tdfooter"><a href="#top">[TOP] 
+</a>
+<!-- start of my buttons 
+<table border="0" cellpadding="10" cellspacing="0">
+<tr> 
+<td width="25%">&nbsp;</td>
+<td width="25%" align="center"><a href="http://www.scds.com.au/"><img src="http://www.scds.com.au/imagens/scdsani2.gif" alt="SCDS Xoops Themes" border="0" /></a><br />
+</td>
+<td width="25%" align="center"><a href="http://xoops.codigolivre.org.br" target="_blank"><img src="http://www.scds.com.au/imagens/xoopsbut3.gif" alt="This site is powered by XOOPS" border="0" /></a></td>
+<td width="25%" align="left">&nbsp;</td>
+</tr>
+</table> 
+End of my buttons -->
+<br />
+<br />
+</td>
+</tr>
+</table> </td>
+<td width="11" background="<{$xoops_imageurl}>shadow.jpg"><img src="<{$xoops_imageurl}>shadow.jpg" width="11" height="35" /></td>
+</tr>
+<tr>
+<td valign="top" class="tdfooter"><table width="100%" border="0" cellpadding="0" cellspacing="0" background="<{$xoops_imageurl}>footer.jpg">
+<tr>
+<td width="204" height="20">&nbsp;</td>
+<td align="center" class="footertext"><{$xoops_footer}></td>
+</tr>
+</table></td>
+<td background="<{$xoops_imageurl}>shadow.jpg"></td>
+</tr>
+</table>
+</body>
+</HTML>
